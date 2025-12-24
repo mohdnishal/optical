@@ -1,136 +1,157 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const ChooseUs = () => {
     return (
         <>
-            <div className="choose-us-block md:pt-20 pt-14">
-                <div
-                    className="container flex max-lg:flex-col max-lg:gap-y-8 items-center justify-between"
-                    style={{ paddingLeft: 0, marginLeft: 0 }}
-                >
-                    <div className="bg-img lg:w-7/12 lg:pr-[45px] md:w-1/2 w-5/6">
-                        <Image
-                            src={"/images/optical/chooseme.jpg"}
-                            style={{ height: "none!important" }}
-                            width={1200}
-                            height={300}
-                            alt="bg-img"
-                            priority={true}
-                            className=""
-                        />
-                    </div>
+            <div className="md:mt-20 mt-10 relative overflow-hidden">
+                <div className="container relative z-[1]">
+                    <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center lg:py-20 md:py-16 py-10">
+                        {/* Left Content */}
+                        <div className="text-content px-4 lg:px-8">
+                            <div className="mb-3">
+                                <span className="inline-block px-4 py-1.5 bg-red-50 text-red-600 text-sm font-semibold rounded-full mb-4">
+                                    Why Choose Us
+                                </span>
+                            </div>
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                                Experience Excellence in Eyewear
+                            </h2>
+                            <p className="text-gray-600 text-base md:text-lg mb-8 leading-relaxed">
+                                Discover premium optical solutions backed by certified experts and exceptional service standards.
+                            </p>
+                            
+                            <div className="grid sm:grid-cols-2 gap-4 md:gap-5">
+                                <div className="group bg-white border border-gray-100 hover:border-red-100 rounded-xl p-5 transition-all duration-300 hover:shadow-lg">
+                                    <div className="flex items-start gap-4">
+                                        <div className="flex-shrink-0 w-12 h-12 bg-red-50 group-hover:bg-red-100 rounded-lg flex items-center justify-center transition-colors">
+                                            <i className="icon-glasses text-red-600 text-2xl"></i>
+                                        </div>
+                                        <div>
+                                            <h3 className="text-gray-900 font-semibold text-base mb-1">
+                                                Premium Collection
+                                            </h3>
+                                            <p className="text-gray-500 text-sm leading-relaxed">
+                                                Curated designer frames
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
 
-                    <div className="content lg:w-5/12 lg:pl-[45px]">
-                        <div className="heading3">
-                            Why Choose Us for Your Eyewear Needs
+                                <div className="group bg-white border border-gray-100 hover:border-red-100 rounded-xl p-5 transition-all duration-300 hover:shadow-lg">
+                                    <div className="flex items-start gap-4">
+                                        <div className="flex-shrink-0 w-12 h-12 bg-red-50 group-hover:bg-red-100 rounded-lg flex items-center justify-center transition-colors">
+                                            <i className="icon-eye text-red-600 text-2xl"></i>
+                                        </div>
+                                        <div>
+                                            <h3 className="text-gray-900 font-semibold text-base mb-1">
+                                                Certified Experts
+                                            </h3>
+                                            <p className="text-gray-500 text-sm leading-relaxed">
+                                                Professional opticians
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="group bg-white border border-gray-100 hover:border-red-100 rounded-xl p-5 transition-all duration-300 hover:shadow-lg">
+                                    <div className="flex items-start gap-4">
+                                        <div className="flex-shrink-0 w-12 h-12 bg-red-50 group-hover:bg-red-100 rounded-lg flex items-center justify-center transition-colors">
+                                            <i className="icon-lens text-red-600 text-2xl"></i>
+                                        </div>
+                                        <div>
+                                            <h3 className="text-gray-900 font-semibold text-base mb-1">
+                                                Custom Solutions
+                                            </h3>
+                                            <p className="text-gray-500 text-sm leading-relaxed">
+                                                Tailored to your needs
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="group bg-white border border-gray-100 hover:border-red-100 rounded-xl p-5 transition-all duration-300 hover:shadow-lg">
+                                    <div className="flex items-start gap-4">
+                                        <div className="flex-shrink-0 w-12 h-12 bg-red-50 group-hover:bg-red-100 rounded-lg flex items-center justify-center transition-colors">
+                                            <i className="icon-shield text-red-600 text-2xl"></i>
+                                        </div>
+                                        <div>
+                                            <h3 className="text-gray-900 font-semibold text-base mb-1">
+                                                Warranty Coverage
+                                            </h3>
+                                            <p className="text-gray-500 text-sm leading-relaxed">
+                                                Complete protection
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="group bg-white border border-gray-100 hover:border-red-100 rounded-xl p-5 transition-all duration-300 hover:shadow-lg">
+                                    <div className="flex items-start gap-4">
+                                        <div className="flex-shrink-0 w-12 h-12 bg-red-50 group-hover:bg-red-100 rounded-lg flex items-center justify-center transition-colors">
+                                            <i className="icon-measure text-red-600 text-2xl"></i>
+                                        </div>
+                                        <div>
+                                            <h3 className="text-gray-900 font-semibold text-base mb-1">
+                                                Perfect Fit
+                                            </h3>
+                                            <p className="text-gray-500 text-sm leading-relaxed">
+                                                Precision adjustments
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="group bg-white border border-gray-100 hover:border-red-100 rounded-xl p-5 transition-all duration-300 hover:shadow-lg">
+                                    <div className="flex items-start gap-4">
+                                        <div className="flex-shrink-0 w-12 h-12 bg-red-50 group-hover:bg-red-100 rounded-lg flex items-center justify-center transition-colors">
+                                            <i className="icon-delivery-truck text-red-600 text-2xl"></i>
+                                        </div>
+                                        <div>
+                                            <h3 className="text-gray-900 font-semibold text-base mb-1">
+                                                Fast Delivery
+                                            </h3>
+                                            <p className="text-gray-500 text-sm leading-relaxed">
+                                                Quick turnaround time
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <Link href={'/shop/breadcrumb-img'} className='inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3.5 rounded-lg transition-colors mt-8'>
+                                Explore Collection
+                            </Link>
                         </div>
 
-                        <div className="heading6 font-normal text-secondary mt-3">
-                            See the world with clarity and confidence — from
-                            fashion‑forward frames to precision‑crafted lenses,
-                            we deliver eyewear solutions tailored to your unique
-                            lifestyle and vision needs.
-                        </div>
-
-                        <div className="list-feature lg:mt-10 mt-6">
-                            {/* 1 */}
-                            <div className="item flex items-center gap-5">
-                                <div className="icon bg-[#D1D0F9] rounded-full">
-                                    <i className="icon-glasses md:text-3xl text-2xl flex items-center justify-center md:w-[68px] md:h-[68px] w-14 h-14"></i>
-                                </div>
-                                <div className="text-content">
-                                    <div className="heading6">
-                                        Premium Eyewear Collection
-                                    </div>
-                                    <div className="caption1 text-secondary mt-2">
-                                        Choose from a wide range of high‑quality
-                                        frames and lenses crafted for comfort
-                                        and style.
-                                    </div>
-                                </div>
+                        {/* Right Image */}
+                        <div className="relative lg:block hidden">
+                            <div className="relative h-[600px] rounded-2xl overflow-hidden">
+                                <Image
+                                    src={'/images/optical/glass.png'}
+                                    width={800}
+                                    height={600}
+                                    alt='Professional eyewear service'
+                                    className='w-full h-full object-cover'
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                             </div>
-
-                            {/* 2 */}
-                            <div className="item flex items-center gap-5 lg:mt-8 mt-4">
-                                <div className="icon bg-[#D1D0F9] rounded-full">
-                                    <i className="icon-eye md:text-3xl text-2xl flex items-center justify-center md:w-[68px] md:h-[68px] w-14 h-14"></i>
-                                </div>
-                                <div className="text-content">
-                                    <div className="heading6">
-                                        Certified Optometrists
+                            
+                            {/* Floating stats card */}
+                            <div className="absolute bottom-8 left-8 right-8 bg-white rounded-xl shadow-2xl p-6">
+                                <div className="grid grid-cols-3 gap-4">
+                                    <div className="text-center">
+                                        <div className="text-2xl font-bold text-red-600">500+</div>
+                                        <div className="text-sm text-gray-600 mt-1">Designs</div>
                                     </div>
-                                    <div className="caption1 text-secondary mt-2">
-                                        Our experienced eye‑care professionals
-                                        ensure accurate vision tests and
-                                        personalized guidance.
+                                    <div className="text-center border-x border-gray-200">
+                                        <div className="text-2xl font-bold text-red-600">10K+</div>
+                                        <div className="text-sm text-gray-600 mt-1">Customers</div>
                                     </div>
-                                </div>
-                            </div>
-
-                            {/* 3 */}
-                            <div className="item flex items-center gap-5 lg:mt-8 mt-4">
-                                <div className="icon bg-[#D1D0F9] rounded-full">
-                                    <i className="icon-lens md:text-3xl text-2xl flex items-center justify-center md:w-[68px] md:h-[68px] w-14 h-14"></i>
-                                </div>
-                                <div className="text-content">
-                                    <div className="heading6">
-                                        Customized Lens Solutions
-                                    </div>
-                                    <div className="caption1 text-secondary mt-2">
-                                        From blue‑light filters to progressive
-                                        lenses, we tailor every pair to your
-                                        unique vision needs.
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* 4 - New */}
-                            <div className="item flex items-center gap-5 lg:mt-8 mt-4">
-                                <div className="icon bg-[#D1D0F9] rounded-full">
-                                    <i className="icon-measure md:text-3xl text-2xl flex items-center justify-center md:w-[68px] md:h-[68px] w-14 h-14"></i>
-                                </div>
-                                <div className="text-content">
-                                    <div className="heading6">
-                                        Perfect Fit Guarantee
-                                    </div>
-                                    <div className="caption1 text-secondary mt-2">
-                                        Enjoy frames adjusted precisely to your
-                                        face shape for maximum comfort and
-                                        long‑lasting wear.
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* 5 - New */}
-                            <div className="item flex items-center gap-5 lg:mt-8 mt-4">
-                                <div className="icon bg-[#D1D0F9] rounded-full">
-                                    <i className="icon-shield md:text-3xl text-2xl flex items-center justify-center md:w-[68px] md:h-[68px] w-14 h-14"></i>
-                                </div>
-                                <div className="text-content">
-                                    <div className="heading6">
-                                        Warranty & After‑Care
-                                    </div>
-                                    <div className="caption1 text-secondary mt-2">
-                                        We provide warranty coverage and
-                                        complimentary adjustments to keep your
-                                        eyewear in perfect condition.
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* 6 - New */}
-                            <div className="item flex items-center gap-5 lg:mt-8 mt-4">
-                                <div className="icon bg-[#D1D0F9] rounded-full">
-                                    <i className="icon-delivery-truck md:text-3xl text-2xl flex items-center justify-center md:w-[68px] md:h-[68px] w-14 h-14"></i>
-                                </div>
-                                <div className="text-content">
-                                    <div className="heading6">
-                                        Fast & Secure Delivery
-                                    </div>
-                                    <div className="caption1 text-secondary mt-2">
-                                        Get your eyewear delivered quickly with
-                                        safe packaging and real‑time tracking.
+                                    <div className="text-center">
+                                        <div className="text-2xl font-bold text-red-600">15+</div>
+                                        <div className="text-sm text-gray-600 mt-1">Years</div>
                                     </div>
                                 </div>
                             </div>
