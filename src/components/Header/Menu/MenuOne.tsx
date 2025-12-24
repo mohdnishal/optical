@@ -94,7 +94,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                             >
                                 <Image
                                     src={logo}
-                                    className="h-8 w-auto md:h-16 lg:h-40"
+                                    className="h-20 w-auto md:h-16 lg:h-40"
                                     alt="logo"
                                 />
                             </Link>
